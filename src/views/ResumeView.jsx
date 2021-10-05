@@ -63,7 +63,7 @@ export default function ResumeView() {
   return (
     <>
       <Typography align="center" variant="h4" component="h2">
-        About
+        Resume
       </Typography>
       <TextBoxComponent>
         <Card className={classes.cardPadding}>

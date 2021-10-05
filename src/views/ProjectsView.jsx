@@ -7,7 +7,7 @@ export default function ProjectsView() {
   return (
     <>
       <Typography align="center" variant="h4" component="h2">
-        About
+        Projects
       </Typography>
       {projectsArr.map((project) => (
         <ProjectComponent
