@@ -1,6 +1,7 @@
 import kwitterIMG from "./images/kwitter_img.png";
 import getItDoneIMG from "./images/getItDone_img.png";
 import spacetagramIMG from "./images/spacetagram_img.png";
+import portfolioIMG from "./images/portfolioIMG.png";
 
 const tab = <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>;
 
@@ -27,6 +28,46 @@ class ProjectOverview {
   }
 }
 
+const PortfolioOverview = new ProjectOverview(
+  "Portfolio",
+  "Developer",
+  "https://caseymockbee97.github.io/portfolio/",
+  "https://github.com/caseymockbee97/portfolio/",
+  portfolioIMG,
+  (
+    <>
+      <p>
+        {tab} For my portfolio I went with a mobile first web design approach
+        when wire-framing this project. I wanted to ensure it would work well on
+        mobile, tablets, and computers. I also used Material UI along with their
+        theme provider to ensure consistent styling with a custom color
+        pallette. To add a more custom feel and look to the project I used
+        Affinity Designer to create SVG images for the icon along with a
+        stylized 'hamburger' button for navigation.
+      </p>
+      <p>
+        {tab}I used the npm package 'react-pdf' to create the PDF viewer. I used
+        this package because it allowed for a high amount of customizations
+        while allowing for links in the PDF.
+      </p>
+      <p>
+        {tab}The project was created using JavaScript and React with Material-UI
+        for the component library and styling. The project was deployed using
+        GitHub Pages.
+      </p>
+    </>
+  ),
+  [
+    "JavaScript",
+    "React",
+    "Git",
+    "GitHub Pages",
+    "Material-UI (MUI 5)",
+    "react-router-dom",
+    "Affinity Designer",
+    "react-pdf",
+  ]
+);
 const SpacetagramOverview = new ProjectOverview(
   "Spacetagram - Social Media",
   "Developer",
@@ -156,4 +197,5 @@ export const projectsArr = [
   SpacetagramOverview,
   KwitterOverview,
   GetItDoneOverview,
+  PortfolioOverview,
 ];

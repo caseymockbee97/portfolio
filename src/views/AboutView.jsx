@@ -47,13 +47,11 @@ export default function AboutView() {
           className={classes.marginBottom}
           variant="body2"
         >
-          {tab}I am a full-stack software engineering student seeking employment
-          as a software developer. I am well versed in Javascript, Python, Git,
-          and React. I have experience working with Node.js and Django. I'm also
-          eager to learn new skills and languages. During my time at Kenzie
-          Academy I have completed projects on my own as well as in teams. When
-          working in teams we utilized Scrum Teams in which I have filled the
-          roles of Product Owner and Scrum Master.
+          {tab}I am a full-stack software developer that is well versed in
+          Javascript, React, Node.js, CSS, HTML5, Python, and Django. I have
+          experience developing in SCRUM environments utilizing Git for version
+          control. I'm eager to put my skills to use and develop them further,
+          as well as learn new languages and skills.
         </Typography>
         <Typography
           align="left"
@@ -69,14 +67,16 @@ export default function AboutView() {
           variant="body2"
         >
           <List>
-            <ListItem>{"JavaScript ES6 (intermediate/proficient)"}</ListItem>
-            <ListItem>{"React (intermediate/proficient)"}</ListItem>
-            <ListItem>{"Python 3 (intermediate/proficient)"}</ListItem>
+            <ListItem>{"JavaScript ES6 (proficient)"}</ListItem>
+            <ListItem>{"React (proficient)"}</ListItem>
+            <ListItem>{"Python 3 (proficient)"}</ListItem>
+            <ListItem>{"HTML5 (proficient)"}</ListItem>
+            <ListItem>{"CSS3 (proficient)"}</ListItem>
+            <ListItem>{"Material UI (intermediate/proficient)"}</ListItem>
             <ListItem>{"Django (intermediate)"}</ListItem>
-            <ListItem>{"HTML5 (intermediate/proficient)"}</ListItem>
-            <ListItem>{"CSS3 (intermediate/proficient)"}</ListItem>
+            <ListItem>{"TypeScript (basic)"}</ListItem>
+            <ListItem>{"SQL (basic)"}</ListItem>
             <ListItem>{"Swift + SwiftUI (basic)"}</ListItem>
-            <ListItem>{"Material UI (intermediate)"}</ListItem>
           </List>
         </Typography>
         <Typography
