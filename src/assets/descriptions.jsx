@@ -3,8 +3,6 @@ import getItDoneIMG from "./images/getItDone_img.png";
 import spacetagramIMG from "./images/spacetagram_img.png";
 import portfolioIMG from "./images/portfolioIMG.png";
 
-const tab = <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>;
-
 class ProjectOverview {
   disclaimer = "";
   constructor(
@@ -37,8 +35,8 @@ const PortfolioOverview = new ProjectOverview(
   (
     <>
       <p>
-        {tab} For my portfolio I went with a mobile first web design approach
-        when wire-framing this project. I wanted to ensure it would work well on
+        For my portfolio I went with a mobile first web design approach when
+        wire-framing this project. I wanted to ensure it would work well on
         mobile, tablets, and computers. I also used Material UI along with their
         theme provider to ensure consistent styling with a custom color
         pallette. To add a more custom feel and look to the project I used
@@ -46,14 +44,14 @@ const PortfolioOverview = new ProjectOverview(
         stylized 'hamburger' button for navigation.
       </p>
       <p>
-        {tab}I used the npm package 'react-pdf' to create the PDF viewer. I used
-        this package because it allowed for a high amount of customizations
-        while allowing for links in the PDF.
+        I used the npm package 'react-pdf' to create the PDF viewer. I used this
+        package because it allowed for a high amount of customizations while
+        allowing for links in the PDF.
       </p>
       <p>
-        {tab}The project was created using JavaScript and React with Material-UI
-        for the component library and styling. The project was deployed using
-        GitHub Pages.
+        The project was created using JavaScript and React with Material-UI for
+        the component library and styling. The project was deployed using GitHub
+        Pages.
       </p>
     </>
   ),
@@ -77,16 +75,16 @@ const SpacetagramOverview = new ProjectOverview(
   (
     <>
       <p>
-        {tab}Spacetagram is a front-end social media app that I constructed in a
+        Spacetagram is a front-end social media app that I constructed in a
         weekend. It utilized NASA's picture of the day API for the images. I
         went with a mobile first web design approach when wire-framing this
         project. I wanted to ensure it would work well on mobile, tablets, and
         computers.
       </p>
       <p>
-        {tab}I wanted to implement infinite scroll into the website but was
-        running into multiple errors using pre-made react components. So I ended
-        up implementing my own infinite scroll feature by creating a custom hook
+        I wanted to implement infinite scroll into the website but was running
+        into multiple errors using pre-made react components. So I ended up
+        implementing my own infinite scroll feature by creating a custom hook
         that used IntersectionObserver. I added a scroll to top button that
         appears after scrolling down the page. Also, I utilized
         'copy-to-clipboard' for copying the image links to your clipboard. To
@@ -94,10 +92,10 @@ const SpacetagramOverview = new ProjectOverview(
         to create SVG images for the header and loading indicator.
       </p>
       <p>
-        {tab}The project was created using JavaScript and React with Material-UI
-        for the component library and styling. I also used Moment for formatting
-        the dates and zustand for the global store. The project was deployed
-        using GitHub Pages.
+        The project was created using JavaScript and React with Material-UI for
+        the component library and styling. I also used Moment for formatting the
+        dates and zustand for the global store. The project was deployed using
+        GitHub Pages.
       </p>
     </>
   ),
@@ -122,13 +120,13 @@ const KwitterOverview = new ProjectOverview(
   (
     <>
       <p>
-        {tab}Kwitter is a front-end Twitter Clone that was constructed in a
-        group with 3 other students from Kenzie Academy. We were able to
-        complete this project within the 2 week deadline. I was assigned the
-        role of SCRUM Master for this project.
+        Kwitter is a front-end Twitter Clone that was constructed in a group
+        with 3 other students from Kenzie Academy. We were able to complete this
+        project within the 2 week deadline. I was assigned the role of SCRUM
+        Master for this project.
       </p>
       <p>
-        {tab}On this project, I was responsible for creating all of the fetch
+        On this project, I was responsible for creating all of the fetch
         requests for connecting to the pre-existing API, creating the user
         search, the logic for the message components, and 'meme mode'. I split
         the task of coding the rest of the functionality with my teammate Joel
@@ -138,10 +136,10 @@ const KwitterOverview = new ProjectOverview(
         programming sessions so the whole group could understand.
       </p>
       <p>
-        {tab}The project was created using JavaScript and React with Material-UI
-        for the component library and styling. We also used Moment for
-        formatting the dates, react-router-dom to handle the routing, and
-        zustand for the global store.
+        The project was created using JavaScript and React with Material-UI for
+        the component library and styling. We also used Moment for formatting
+        the dates, react-router-dom to handle the routing, and zustand for the
+        global store.
       </p>
     </>
   ),
@@ -156,27 +154,27 @@ const GetItDoneOverview = new ProjectOverview(
   (
     <>
       <p>
-        {tab}GetItDone.js is a productivity web app modeled after GitHub
-        projects. I worked in a group with 3 other students from Kenzie Academy
-        to complete this project in 3 weeks. I was assigned the role of Product
-        Owner but I also worked as Scrum Master to fill in for a teammate.
+        GetItDone.js is a productivity web app modeled after GitHub projects. I
+        worked in a group with 3 other students from Kenzie Academy to complete
+        this project in 3 weeks. I was assigned the role of Product Owner but I
+        also worked as Scrum Master to fill in for a teammate.
       </p>
       <p>
-        {tab}On this project, I was mainly responsible for the overall
-        functionality and structure of the front-end and back-end. Throughout
-        the project I hosted partner programming sessions to get other teammates
-        involved in the coding portion of the project. My teammate Sebastian
-        Caudill was responsible for the styling of this project and approving
-        commits to the main branch.
+        On this project, I was mainly responsible for the overall functionality
+        and structure of the front-end and back-end. Throughout the project I
+        hosted partner programming sessions to get other teammates involved in
+        the coding portion of the project. My teammate Sebastian Caudill was
+        responsible for the styling of this project and approving commits to the
+        main branch.
       </p>
       <p>
-        {tab}The Front End was created using JavaScript and React with
-        Semantic-UI for the component library and styling. We also used Moment
-        for formatting dates, react-beautiful-dnd for drag and drop
-        functionality, react-toastify for the toasts, zustand for the global
-        store, react-router-dom for the global store, and gh-pages for
-        deployment. The front end was deployed to GitHub Pages and the backend
-        is deployed to glitch.me.
+        The Front End was created using JavaScript and React with Semantic-UI
+        for the component library and styling. We also used Moment for
+        formatting dates, react-beautiful-dnd for drag and drop functionality,
+        react-toastify for the toasts, zustand for the global store,
+        react-router-dom for the global store, and gh-pages for deployment. The
+        front end was deployed to GitHub Pages and the backend is deployed to
+        glitch.me.
       </p>
     </>
   ),

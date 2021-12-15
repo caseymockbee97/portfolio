@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
   pointer: {
     cursor: "pointer",
   },
+  description: {
+    textIndent: "20pt",
+  },
 }));
 
 export default function ProjectComponent(props) {
@@ -103,7 +106,11 @@ export default function ProjectComponent(props) {
         </List>
         <Typography
           align="left"
-          className={clsx(classes.fullWidth, classes.marginBottom)}
+          className={clsx(
+            classes.fullWidth,
+            classes.marginBottom,
+            classes.description
+          )}
         >
           {props.description}{" "}
         </Typography>

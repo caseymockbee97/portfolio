@@ -1,11 +1,10 @@
 import React from "react";
+import clsx from "clsx";
 import { Typography, List, ListItem, ListItemText } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import profileImage from "../assets/images/profileImage.jpeg";
 import TextBoxComponent from "../components/TextBoxComponent";
 import { Box } from "@mui/system";
-
-const tab = <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>;
 
 const useStyles = makeStyles({
   image: {
@@ -19,6 +18,9 @@ const useStyles = makeStyles({
   imageContainer: {
     display: "flex",
     justifyContent: "center",
+  },
+  description: {
+    textIndent: "20pt",
   },
 });
 
@@ -44,10 +46,10 @@ export default function AboutView() {
         </Typography>
         <Typography
           align="left"
-          className={classes.marginBottom}
+          className={clsx(classes.marginBottom, classes.description)}
           variant="body2"
         >
-          {tab}I am a full-stack software developer that is well versed in
+          I am a full-stack software developer that is well versed in
           Javascript, React, Node.js, CSS, HTML5, Python, and Django. I have
           experience developing in SCRUM environments utilizing Git for version
           control. I'm eager to put my skills to use and develop them further,
