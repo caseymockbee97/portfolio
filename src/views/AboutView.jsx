@@ -69,16 +69,15 @@ export default function AboutView() {
           variant="body2"
         >
           <List>
-            <ListItem>{"JavaScript ES6 (proficient)"}</ListItem>
-            <ListItem>{"React (proficient)"}</ListItem>
-            <ListItem>{"Python 3 (proficient)"}</ListItem>
-            <ListItem>{"HTML5 (proficient)"}</ListItem>
-            <ListItem>{"CSS3 (proficient)"}</ListItem>
-            <ListItem>{"Material UI (intermediate/proficient)"}</ListItem>
-            <ListItem>{"Django (intermediate)"}</ListItem>
-            <ListItem>{"TypeScript (basic)"}</ListItem>
-            <ListItem>{"SQL (basic)"}</ListItem>
-            <ListItem>{"Swift + SwiftUI (basic)"}</ListItem>
+            <ListItem>{"JavaScript ES6"}</ListItem>
+            <ListItem>{"React.js"}</ListItem>
+            <ListItem>{"Python 3"}</ListItem>
+            <ListItem>{"HTML5"}</ListItem>
+            <ListItem>{"CSS3"}</ListItem>
+            <ListItem>{"Material UI"}</ListItem>
+            <ListItem>{"Django"}</ListItem>
+            <ListItem>{"SQL"}</ListItem>
+            <ListItem>{"Swift + SwiftUI"}</ListItem>
           </List>
         </Typography>
         <Typography
