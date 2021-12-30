@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter } from "react-router-dom";
+import { HashRouter, BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -26,9 +26,9 @@ let theme = createTheme({
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <HashRouter basename="/portfolio">
+      <BrowserRouter basename="/portfolio">
         <App />
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
