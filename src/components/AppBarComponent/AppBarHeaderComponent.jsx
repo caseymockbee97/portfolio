@@ -10,6 +10,9 @@ export default function AppBarHeaderComponent(props) {
         onClick={handleClick}
         sx={{ color: "#302E2C" }}
         color="inherit"
+        aria-label={
+          isClicked ? "Close Navigation Menu" : "Expand Navigation Menu"
+        }
       >
         <SvgIcon
           className={isClicked && classes.navButtonClicked}
