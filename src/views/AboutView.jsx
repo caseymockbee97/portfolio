@@ -13,6 +13,7 @@ const useStyles = makeStyles({
     objectFit: "cover",
     borderRadius: "50%",
     margin: "5px",
+    filter: "drop-shadow(0 0 4px #000000)",
   },
   imageContainer: {
     display: "flex",

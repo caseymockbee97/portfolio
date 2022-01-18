@@ -8,7 +8,7 @@ export default function AppBarHeaderComponent(props) {
     <Toolbar>
       <IconButton
         onClick={handleClick}
-        sx={{ color: "#302E2C" }}
+        sx={{ color: "rgba(255,255,255,.87)" }}
         color="inherit"
         aria-label={
           isClicked ? "Close Navigation Menu" : "Expand Navigation Menu"

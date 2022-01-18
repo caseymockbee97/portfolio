@@ -16,12 +16,13 @@ import backgroundImage from "./assets/images/BackGround.jpeg";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    // backgroundColor: theme.background,
     minHeight: "100vh",
     minWidth: "100vw",
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    backgroundPosition: "center",
   },
 }));
 
