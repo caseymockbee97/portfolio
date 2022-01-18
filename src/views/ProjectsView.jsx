@@ -1,14 +1,15 @@
-import React from "react";
-import Typography from "@mui/material/Typography";
+import React, { useEffect } from "react";
 import { projectsArr } from "../assets/descriptions";
 import ProjectComponent from "../components/ProjectComponent";
 
-export default function ProjectsView() {
+export default function ProjectsView(props) {
+  const { setAppBarTitle } = props;
+
+  useEffect(() => {
+    setAppBarTitle("Projects");
+  }, [setAppBarTitle]);
   return (
     <>
-      <Typography align="center" variant="h4" component="h2">
-        Projects
-      </Typography>
       {projectsArr.map((project) => (
         <ProjectComponent
           id={project.title}

@@ -8,19 +8,21 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 let theme = createTheme({
   palette: {
     primary: {
-      main: "#385C61",
-      contrastText: "#FAEBDA",
+      main: "rgba(0, 0, 0, .5)",
+      // main: "#bcbcbc",
+      contrastText: "rgba(255,255,255,.87)",
     },
     secondary: {
-      main: "#E8DBCC",
-      contrastText: "#302E2C",
+      main: "rgba(18,18,18,.8)",
+      contrastText: "rgba(255,255,255,.87)",
     },
     text: {
-      primary: "#302E2C",
+      primary: "rgba(255,255,255,.87)",
     },
+    disabledButton: "rgba(255,255,255,.87)",
   },
-  background: "#FAEBDA",
-  textBackground: "#E8DBCC",
+  background: "rgba(255,255,255,.87)",
+  textBackground: "rgba(0,0,0,.3)",
 });
 
 ReactDOM.render(

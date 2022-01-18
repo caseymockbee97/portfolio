@@ -1,8 +1,13 @@
 import { Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import TextBoxComponent from "../components/TextBoxComponent";
 
-export default function ErrorView() {
+export default function ErrorView(props) {
+  const { setAppBarTitle } = props;
+
+  useEffect(() => {
+    setAppBarTitle("Error");
+  }, [setAppBarTitle]);
   return (
     <>
       <TextBoxComponent>
@@ -10,7 +15,7 @@ export default function ErrorView() {
           Error 404
         </Typography>
         <Typography align="center" component="p">
-          It looks like this endpoint cannot be reached.
+          It looks like that URL isn't 100% correct.
         </Typography>
       </TextBoxComponent>
     </>

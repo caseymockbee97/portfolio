@@ -45,7 +45,7 @@ HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-export default function AppBarComponent() {
+export default function AppBarComponent(props) {
   const classes = useStyles();
 
   const [isClicked, setIsClicked] = useState(false);
@@ -54,11 +54,15 @@ export default function AppBarComponent() {
 
   return (
     <HideOnScroll>
-      <AppBar>
+      <AppBar
+        color={isClicked ? "secondary" : "transparent"}
+        elevation={isClicked ? 1 : 0}
+      >
         <AppBarHeaderComponent
           handleClick={handleClick}
           isClicked={isClicked}
           classes={classes}
+          appBarTitle={props.appBarTitle}
         />
         {isClicked && (
           <AppBarNavigationComponent

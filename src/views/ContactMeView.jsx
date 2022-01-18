@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -6,12 +6,14 @@ import ListItem from "@mui/material/ListItem";
 import TextBoxComponent from "../components/TextBoxComponent";
 import { Link } from "@mui/material";
 
-export default function ContactMeView() {
+export default function ContactMeView(props) {
+  const { setAppBarTitle } = props;
+
+  useEffect(() => {
+    setAppBarTitle("Contact");
+  }, [setAppBarTitle]);
   return (
     <>
-      <Typography align="center" variant="h4" component="h2">
-        Contact Me
-      </Typography>
       <TextBoxComponent>
         <Typography align="left" variant="h6" component="h3">
           Email
@@ -23,6 +25,7 @@ export default function ContactMeView() {
                 target="_blank"
                 underline="hover"
                 href="mailto: caseymockbee97@gmail.com"
+                color="#fff"
               >
                 {"caseymockbee97@gmail.com"}
               </Link>
@@ -39,6 +42,7 @@ export default function ContactMeView() {
                 target="_blank"
                 underline="hover"
                 href="https://github.com/caseymockbee97"
+                color="#fff"
               >
                 {"https://github.com/caseymockbee97"}
               </Link>
@@ -55,6 +59,7 @@ export default function ContactMeView() {
                 target="_blank"
                 underline="hover"
                 href="https://www.linkedin.com/in/casey-mockbee/"
+                color="#fff"
               >
                 {"https://www.linkedin.com/in/casey-mockbee/"}
               </Link>

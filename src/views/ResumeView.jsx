@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import resume from "../assets/pdfs/Master_Resume_2021.pdf";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
@@ -10,7 +10,6 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import TextBoxComponent from "../components/TextBoxComponent";
@@ -31,10 +30,15 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ResumeView() {
+export default function ResumeView(props) {
   const classes = useStyles();
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const { setAppBarTitle } = props;
+
+  useEffect(() => {
+    setAppBarTitle("Resume");
+  }, [setAppBarTitle]);
 
   // used to check the page width
   const isMobile = useMediaQuery("(min-width:600px)");
@@ -62,9 +66,6 @@ export default function ResumeView() {
   };
   return (
     <>
-      <Typography align="center" variant="h4" component="h2">
-        Resume
-      </Typography>
       <TextBoxComponent>
         <Card className={classes.cardPadding}>
           <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
@@ -85,7 +86,7 @@ export default function ResumeView() {
           <Button onClick={handleDecrement} disabled={pageNumber === 1}>
             <ArrowBackIcon />
           </Button>
-          <Button disabled>
+          <Button color="disabledButton">
             {pageNumber} of {numPages}
           </Button>
           <Button onClick={handleIncrement} disabled={pageNumber === numPages}>

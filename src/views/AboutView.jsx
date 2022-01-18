@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import clsx from "clsx";
 import { Typography, List, ListItem, ListItemText } from "@mui/material";
 import { makeStyles } from "@mui/styles";
@@ -12,7 +12,6 @@ const useStyles = makeStyles({
     height: "100px",
     objectFit: "cover",
     borderRadius: "50%",
-    border: "5px solid #302E2C",
     margin: "5px",
   },
   imageContainer: {
@@ -24,18 +23,22 @@ const useStyles = makeStyles({
   },
 });
 
-export default function AboutView() {
+export default function AboutView(props) {
   const classes = useStyles();
+  const { setAppBarTitle } = props;
+
+  useEffect(() => {
+    setAppBarTitle("About");
+  }, [setAppBarTitle]);
   return (
     <div>
-      <Typography align="center" variant="h4" component="h2">
-        About
-      </Typography>
       <Box className={classes.imageContainer}>
-        <img src={profileImage} alt="Casey Smiling" className={classes.image} />
+        <img src={profileImage} alt="Casey Mockbee" className={classes.image} />
       </Box>
       <TextBoxComponent>
-        <Typography align="center">Casey</Typography>
+        <Typography align="center" variant="h4" component="h2">
+          Casey Mockbee
+        </Typography>
         <Typography
           align="left"
           className={classes.marginTop}
@@ -98,7 +101,11 @@ export default function AboutView() {
               }
               secondary={
                 <>
-                  <Typography align="left" variant="body2">
+                  <Typography
+                    align="left"
+                    variant="body2"
+                    color="primary.contrastText"
+                  >
                     {"Front-End Web Development Certification (Apr 2021)"}
                     <br />
                     {"Full-Stack Web Development Certification (Oct 2021)"}
@@ -116,7 +123,11 @@ export default function AboutView() {
               }
               secondary={
                 <>
-                  <Typography align="left" variant="body2">
+                  <Typography
+                    align="left"
+                    variant="body2"
+                    color="primary.contrastText"
+                  >
                     {"Hospitality and Tourism Management (B.S) (May 2020)"}
                   </Typography>
                 </>

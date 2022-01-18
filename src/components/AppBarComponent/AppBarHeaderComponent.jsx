@@ -3,7 +3,7 @@ import { Toolbar, Box, Typography, SvgIcon, IconButton } from "@mui/material";
 import MenuIcon from "../../assets/icons/MenuIcon";
 
 export default function AppBarHeaderComponent(props) {
-  const { handleClick, isClicked, classes } = props;
+  const { handleClick, isClicked, classes, appBarTitle } = props;
   return (
     <Toolbar>
       <IconButton
@@ -23,7 +23,7 @@ export default function AppBarHeaderComponent(props) {
       </IconButton>
       <Box style={{ flexGrow: 1, marginLeft: "-51px" }}>
         <Typography align="center" variant="h3" component="h1">
-          CASEY
+          {appBarTitle}
         </Typography>
       </Box>
     </Toolbar>
