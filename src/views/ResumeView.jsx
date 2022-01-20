@@ -86,7 +86,10 @@ export default function ResumeView(props) {
           <Button onClick={handleDecrement} disabled={pageNumber === 1}>
             <ArrowBackIcon />
           </Button>
-          <Button color="disabledButton">
+          <Button
+            variant="contained"
+            sx={{ backgroundColor: "rgba(0,0,0,.3)" }}
+          >
             {pageNumber} of {numPages}
           </Button>
           <Button onClick={handleIncrement} disabled={pageNumber === numPages}>
