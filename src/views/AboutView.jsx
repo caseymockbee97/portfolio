@@ -33,13 +33,17 @@ export default function AboutView(props) {
   }, [setAppBarTitle]);
   return (
     <div>
-      <Box className={classes.imageContainer}>
-        <img src={profileImage} alt="Casey Mockbee" className={classes.image} />
-      </Box>
       <TextBoxComponent>
         <Typography align="center" variant="h4" component="h2">
           Casey Mockbee
         </Typography>
+        <Box className={classes.imageContainer}>
+          <img
+            src={profileImage}
+            alt="Casey Mockbee"
+            className={classes.image}
+          />
+        </Box>
         <Typography
           align="left"
           className={classes.marginTop}
