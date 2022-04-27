@@ -27,6 +27,9 @@ const useStyles = makeStyles({
   },
   roundedCorners: {
     borderRadius: "10px",
+    display: "flex",
+    justifyContent: "center",
+    overflow: "hidden",
   },
 });
 
@@ -67,9 +70,11 @@ export default function ResumeView(props) {
   return (
     <>
       <TextBoxComponent>
-        <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
-          <Page width={isMobile ? 600 : 300} pageNumber={pageNumber} />
-        </Document>
+        <div className={classes.roundedCorners}>
+          <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
+            <Page width={isMobile ? 600 : 300} pageNumber={pageNumber} />
+          </Document>
+        </div>
       </TextBoxComponent>
       <Box className={classes.buttonGroup}>
         <Button
