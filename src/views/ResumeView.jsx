@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@mui/styles";
-import resume from "../assets/pdfs/Master_Resume_2021.pdf";
+import resume from "../assets/pdfs/MasterResumeCaseyMockbee.pdf";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import Button from "@mui/material/Button";
@@ -25,8 +25,8 @@ const useStyles = makeStyles({
     position: "fixed",
     bottom: "10px",
   },
-  cardPadding: {
-    padding: "5px",
+  roundedCorners: {
+    borderRadius: "10px",
   },
 });
 
@@ -67,11 +67,9 @@ export default function ResumeView(props) {
   return (
     <>
       <TextBoxComponent>
-        <Card className={classes.cardPadding}>
-          <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
-            <Page width={isMobile ? 600 : 300} pageNumber={pageNumber} />
-          </Document>
-        </Card>
+        <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
+          <Page width={isMobile ? 600 : 300} pageNumber={pageNumber} />
+        </Document>
       </TextBoxComponent>
       <Box className={classes.buttonGroup}>
         <Button
